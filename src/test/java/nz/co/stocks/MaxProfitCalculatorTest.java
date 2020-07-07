@@ -77,7 +77,7 @@ public class MaxProfitCalculatorTest
   public void testCalculateMaxProfitOverALongPeriod()
   {
     List<BigDecimal> priceList = new ArrayList<BigDecimal>();
-    // Assuming 6 hours in a trading day - so 360 stock prices for 360 minutes
+    // 10000 minutes ~ a trading month
     for (double price = 0.001; price <= 10; price += 0.001)
     {
       priceList.add(new BigDecimal(price).setScale(3, BigDecimal.ROUND_UP));
